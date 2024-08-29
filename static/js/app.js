@@ -20,7 +20,7 @@ function buildMetadata(sample) {
     // Inside a loop, you will need to use d3 to append new
     // tags for each key-value in the filtered metadata.
     for (key in results){
-        panel.append("h6").text(`${key}: ${results[key]}`)
+        panel.append("h6").text(`${key.toUpperCase()}: ${results[key]}`)
       };
     
   });
